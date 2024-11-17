@@ -3,8 +3,9 @@
 }
 .checkout-container {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     gap: 20px;
     padding: 40px 0;
 }
@@ -19,12 +20,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.billing-details {
-    width: 60%;
-}
 
 .order-summary {
-    width: 35%;
     position: relative;
     opacity: 0.9;
 }

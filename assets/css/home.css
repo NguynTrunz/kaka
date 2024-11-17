@@ -6,10 +6,6 @@
   width: 100%; /* Đảm bảo header chiếm toàn bộ chiều rộng */
   z-index: 1000; /* Đặt z-index cao hơn để đảm bảo nó nằm trên các phần tử khác */
 }
-.position-relative {
-  position: relative;
-}
-
 .toggle-password {
   position: absolute;
   top: 50%;
@@ -48,10 +44,15 @@
 }
 
 /* thong bao log-sign  */
+.header-mobile {
+  display: none;
+}
 /* header top */
+
 .header-top {
   background-color: var(--color-one);
   padding: 6px 0;
+  width: 100%;
 }
 .header-top .greeting {
   color: white;
@@ -173,9 +174,7 @@
 /* End header top */
 
 /* header main */
-.mobile {
-  display: none;
-}
+
 .header-main {
   top: 0;
 }
@@ -203,30 +202,7 @@
   object-fit: contain;
   padding: 0;
 }
-/* mobile  */
-.mobile .inner-wrap {
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.mobile .logo {
-  height: auto;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-.mobile .logo .img-fluid {
-  height: 70px;
-  width: 100%;
-  object-fit: contain;
-  padding: 0;
-}
-.mobile .dropdown-toggle {
-  background-color: var(--color-one);
-  border: none;
-}
-/* end mobile  */
+
 .inner-wrap .logo h3 {
   color: var(--color-one);
   font-family: var(--font1);
@@ -391,7 +367,7 @@
   transform: translate(-50%, -50%);
 }
 
-.section-2 .content .title h2 {
+  h2 {
   font-family: var(--font2);
   font-size: 52px;
   font-weight: 700;
@@ -500,13 +476,7 @@
 .section-3 .popular-content {
   margin-bottom: 30px;
 }
-.section-3 .popular-content .popular-title h2 {
-  font-family: var(--font2);
-  font-size: 52px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #010148;
-}
+
 .section-3 .popular-content .popular-title .sub-title {
   color: var(--color-three);
 }
@@ -520,7 +490,6 @@
   margin-bottom: 0;
 }
 .section-3 .slide-category .box-category {
-  width: calc(100% / 6);
   text-align: center;
   padding: 0 20px;
   margin-bottom: 10px;
@@ -622,13 +591,7 @@
 .section-5 .popular-content {
   margin-bottom: 30px;
 }
-.title .main-title h2 {
-  font-family: var(--font2);
-  font-size: 52px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #010148;
-}
+
 .title .main-title span {
   color: var(--color-three);
 }
@@ -884,10 +847,31 @@ li a:hover {
     flex-direction: column;
     padding: auto; /* Remove extra padding */
     width: 100vw; /* Ensure it fits the viewport width */
-    overflow: hidden; /* Prevent overflow */
   }
   .header-top {
     display: none;
+  }
+  .dropdown-toggle{
+    background-color: var(--color-one);
+  }
+  .logo {
+    height: 50px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .logo img {
+    padding: 0;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+  }
+  .logo .img-fluid {
+    height: 50px;
+    width: 100%;
+    object-fit: contain;
+    padding: 0;
   }
   .pc {
     display: none;
@@ -895,9 +879,57 @@ li a:hover {
   .banner {
     width: 100%;
   }
-  .mobile {
+  .header-mobile {
     display: block;
-    
+  }
+  .section-1 .banner {
+    height: 400px;
+  }
+  .section-1 .banner1 {
+    height: 500px;
+  }
+  .section-1 .banner1 img {
+    height: 550px;
+  }
+  .section-1 .main-title h1 {
+    font-size: 36px;
+  }
+  .section-1 .main-title .sub-title2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .section-1 .main-title .desc {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .section-1 .na {
+    margin-top: 40px;
+  }
+  .section-1 .button-2 {
+    font-size: 12px;
+    padding: 10px 14px;
+    margin-right: 20px;
+  }
+  .section-2, .section-2 .container{
+    padding: 0;
+  }
+  .section-2 .box-content .box {
+    flex: 0 0 48%; /* 1 box trên 1 hàng cho màn hình dưới 480px */
+  }
+  h2{
+    font-size: 42px;
+  }
+  .section-3 .popular-content .popular-desc p{
+    font-size: 14px;
+  }
+  .section-3 .slide-category .box-category {
+    flex: 0 0 50%; /* 1 box trên 1 hàng cho màn hình dưới 480px */
+  }
+  .footer .title{
+    font-size: 18px;
+  }
+  .footer .info{
+    font-size: 12px;
   }
 }
 
@@ -906,7 +938,9 @@ li a:hover {
   .section-2 .box-content .box {
     flex: 0 0 100%; /* 1 box trên 1 hàng cho màn hình dưới 480px */
   }
-
+  .section-1 .banner1 {
+    height: 550px;
+  }
 }
 
 /* End body  */

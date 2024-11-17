@@ -17,150 +17,153 @@
 <body>
   <!-- header -->
   <header class="header">
-    <div class="header-top" id="headerTop">
-      <div class="row">
-        <div class="col-12 d-flex justify-content-around">
-          <div class="col-xl-5 col-md-4 col-sm-4 greeting">
-            Chào mừng bạn đến với cửa hàng hữu cơ Fiberico
-          </div>
-          <div class="contact">
-            <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="ins"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="tt"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" class="mail"><i class="fa-solid fa-envelope"></i></a>
-          </div>
-          <div class="col-xl-3 col-md-3 col-sm-2 information">
-            <button type="button" class="btn infor" data-toggle="modal" data-target="#ttnhom">
-              TT nhóm
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade modal-form modal-ff" id="ttnhom" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header modal-title">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Các thành viên trong nhóm
-                    </h5>
-                  </div>
-                  <div class="modal-body-ttnhom">
-                    <span class="d-block">Nguyễn Hùng Vương</span>
-                    <span class="d-block">Nguyễn Duy Hoài Trung</span>
-                    <span class="d-block">Nguyễn Hoàng Nhật Anh </span>
-                    <span class="d-block">Nguyễn Thanh Phong</span>
-                  </div>
-                </div>
-              </div>
+    <section class="header-pc">
+      <div class="header-top">
+        <div class="roww">
+          <div class="col-12 d-flex justify-content-around">
+            <div class="col-xl-5 col-md-4 greeting">
+              Chào mừng bạn đến với cửa hàng hữu cơ Fiberico
             </div>
-          </div>
-          <div class="col-xl-4 col-md-4 col-sm-6 log-sign">
-            <!-- Hiển thị tên người dùng sau khi đăng nhập hoặc đăng ký -->
-            <div class="dropdown" id="userAccount" style="display: none;">
-              <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton "
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span id="usernameDisplay"></span>
+            <div class="contact">
+              <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="ins"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="tt"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" class="mail"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="col-xl-3 col-md-3 col-2 information">
+              <button type="button" class="btn infor" data-toggle="modal" data-target="#ttnhom">
+                TT nhóm
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" id="logoutButton" href="#">Đăng xuất</a>
-              </div>
-            </div>
-            <!-- Button Đăng nhập -->
-            <button type="button" class="btn login col-3 mr-1" data-toggle="modal" data-target="#login">
-              Đăng nhập
-            </button>
 
-            <!-- Modal Đăng nhập -->
-            <div class="modal fade modal-form modal-ff" id="login" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <img class="inner-img" src="./assets/img/logo web/logo2.png" alt="img-1" />
-                  </div>
-                  <div class="modal-body">
-                    <form id="loginForm">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nhập tên đăng nhập" id="loginUsername"
-                          autocomplete="on" autofocus />
-                        <span id="loginUsernameError" class="text-danger" style="display: none">Tên đăng nhập không hợp
-                          lệ.</span>
-                      </div>
-                      <div class="form-group position-relative">
-                        <input type="password" class="form-control password-input" placeholder="Nhập mật khẩu"
-                          id="loginPassword" />
-                        <span class="toggle-password" onclick="togglePasswordVisibility('loginPassword')"><i
-                            class="fa-regular fa-eye"></i></span>
-                      </div>
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" />Nhớ tôi
-                      </div>
-                      <div class="modal-footer">
-                        <button type="submit" class="btn button">Đăng nhập</button>
-                      </div>
-                    </form>
+              <!-- Modal -->
+              <div class="modal fade modal-form modal-ff" id="ttnhom" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header modal-title">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Các thành viên trong nhóm
+                      </h5>
+                    </div>
+                    <div class="modal-body-ttnhom">
+                      <span class="d-block">Nguyễn Hùng Vương</span>
+                      <span class="d-block">Nguyễn Duy Hoài Trung</span>
+                      <span class="d-block">Nguyễn Hoàng Nhật Anh </span>
+                      <span class="d-block">Nguyễn Thanh Phong</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Button Đăng ký -->
-            <button type="button" class="btn login col-3 mr-2" data-toggle="modal" data-target="#sign">
-              Đăng kí
-            </button>
+            <div class="col-xl-4 col-md-4 col-6 log-sign">
+              <!-- Hiển thị tên người dùng sau khi đăng nhập hoặc đăng ký -->
+              <div class="dropdown" id="userAccount" style="display: none;">
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton "
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span id="usernameDisplay"></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" id="logoutButton" href="#">Đăng xuất</a>
+                </div>
+              </div>
+              <!-- Button Đăng nhập -->
+              <button type="button" class="btn login col-3 mr-1" data-toggle="modal" data-target="#login">
+                Đăng nhập
+              </button>
 
-            <!-- Modal Đăng ký -->
-            <div class="modal fade modal-form modal-ff" id="sign" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content box-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <img class="inner-img" src="./assets/img/logo web/logo2.png" alt="img-1" />
+              <!-- Modal Đăng nhập -->
+              <div class="modal fade modal-form modal-ff" id="login" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <img class="inner-img" src="./assets/img/logo web/logo2.png" alt="img-1" />
+                    </div>
+                    <div class="modal-body">
+                      <form id="loginForm">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Nhập tên đăng nhập" id="loginUsername"
+                            autocomplete="on" autofocus />
+                          <span id="loginUsernameError" class="text-danger" style="display: none">Tên đăng nhập không
+                            hợp
+                            lệ.</span>
+                        </div>
+                        <div class="form-group position-relative">
+                          <input type="password" class="form-control password-input" placeholder="Nhập mật khẩu"
+                            id="loginPassword" />
+                          <span class="toggle-password" onclick="togglePasswordVisibility('loginPassword')"><i
+                              class="fa-regular fa-eye"></i></span>
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" />Nhớ tôi
+                        </div>
+                        <div class="modal-footer">
+                          <button type="submit" class="btn button">Đăng nhập</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
-                  <div class="modal-body">
-                    <form onsubmit="validateRegisterForm(event)">
-                      <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Nhập email" id="registerEmail"
-                          autocomplete="on" autofocus />
-                        <span id="registerEmailError" class="text-danger" style="display: none">Email không đúng định
-                          dạng.</span>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Tên đăng nhập" autocomplete="on" />
-                      </div>
-                      <div class="form-group position-relative">
-                        <input type="password" class="form-control password-input" placeholder="Nhập mật khẩu"
-                          id="registerPassword1" />
-                        <span class="toggle-password" onclick="togglePasswordVisibility('registerPassword1')"><i
-                            class="fa-regular fa-eye"></i></span>
-                      </div>
-                      <div class="form-group position-relative">
-                        <input type="password" class="form-control password-input" placeholder="Nhập lại mật khẩu"
-                          id="registerPassword2" />
-                        <span class="toggle-password" onclick="togglePasswordVisibility('registerPassword2')"><i
-                            class="fa-regular fa-eye"></i></span>
-                        <span id="passwordError" class="text-danger" style="display: none">Mật khẩu không khớp.</span>
-                      </div>
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="termsCheckbox" />
-                        Tôi đồng ý với các điều khoản
-                        <span id="termsError" class="text-danger" style="display: none">Bạn phải đồng ý với các điều
-                          khoản.</span>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="submit" class="btn button">
-                          Đăng ký
-                        </button>
-                      </div>
-                    </form>
+                </div>
+              </div>
+              <!-- Button Đăng ký -->
+              <button type="button" class="btn login col-3 mr-2" data-toggle="modal" data-target="#sign">
+                Đăng kí
+              </button>
+
+              <!-- Modal Đăng ký -->
+              <div class="modal fade modal-form modal-ff" id="sign" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content box-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <img class="inner-img" src="./assets/img/logo web/logo2.png" alt="img-1" />
+                    </div>
+                    <div class="modal-body">
+                      <form onsubmit="validateRegisterForm(event)">
+                        <div class="form-group">
+                          <input type="email" class="form-control" placeholder="Nhập email" id="registerEmail"
+                            autocomplete="on" autofocus />
+                          <span id="registerEmailError" class="text-danger" style="display: none">Email không đúng định
+                            dạng.</span>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Tên đăng nhập" autocomplete="on" />
+                        </div>
+                        <div class="form-group position-relative">
+                          <input type="password" class="form-control password-input" placeholder="Nhập mật khẩu"
+                            id="registerPassword1" />
+                          <span class="toggle-password" onclick="togglePasswordVisibility('registerPassword1')"><i
+                              class="fa-regular fa-eye"></i></span>
+                        </div>
+                        <div class="form-group position-relative">
+                          <input type="password" class="form-control password-input" placeholder="Nhập lại mật khẩu"
+                            id="registerPassword2" />
+                          <span class="toggle-password" onclick="togglePasswordVisibility('registerPassword2')"><i
+                              class="fa-regular fa-eye"></i></span>
+                          <span id="passwordError" class="text-danger" style="display: none">Mật khẩu không khớp.</span>
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="termsCheckbox" />
+                          Tôi đồng ý với các điều khoản
+                          <span id="termsError" class="text-danger" style="display: none">Bạn phải đồng ý với các điều
+                            khoản.</span>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="submit" class="btn button">
+                            Đăng ký
+                          </button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -168,36 +171,169 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="header-main" id="headerMain">
-      <div class="containerr">
-        <div class="row">
-          <div class="inner-wrap col-12 d-flex">
-            <div class="logo d-flex col-lg-4 col-md-3 col-sm-4 col-4">
-              <img class="col-lg-5 col-md-6 col-sm-12" src="./assets/img/logo web/logo2.png" alt="img-1" />
-              <h3 class="col-lg-7 col-md-6 col-sm-12">Nông sản sạch</h3>
-            </div>
-            <div class="function-pc col-lg-8 col-md-9 col-sm-8 col-8 d-flex text-center align-items-center ">
-              <div class="navbar col-10">
-                <a class="col-lg-2 col-sm-4" href="index.html">Trang chủ</a>
-                <a class="col-lg-2 col-sm-4" href="shop.html">Cửa hàng</a>
-                <a class="col-lg-2 col-sm-4" href="trendingprd.html">Bán chạy</a>
-                <a class="col-lg-2 col-sm-4" href="tintuc.html">Tin tức</a>
-                <a class="col-lg-2 col-sm-4" href="gioithieu.html">Giới thiệu</a>
+      <div class="header-main pc" id="headerMain">
+        <div class="containerr">
+          <div class="row">
+            <div class="inner-wrap col-12 d-flex">
+              <div class="logo d-flex col-lg-4 col-md-3">
+                <img class="col-4 " src="./assets/img/logo web/logo2.png" alt="img-1" />
+                <h3 class="col-8 hh d-flex">Nông sản sạch</h3>
               </div>
-              <div class="cart-search col-2">
-                <div class="cart">
-                  <a href="giohang.html" aria-label="Giỏ hàng">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </a>
-                </div>
+              <div class="navbar col-lg-7 d-flex">
+                <a class="col-lg-2 col-4" href="index.html">Trang chủ</a>
+                <a class="col-lg-2 col-4" href="shop.html">Cửa hàng</a>
+                <a class="col-lg-2 col-4" href="trendingprd.html">Bán chạy</a>
+                <a class="col-lg-2 col-4" href="tintuc.html">Tin tức</a>
+                <a class="col-lg-2 col-4" href="gioithieu.html">Giới thiệu</a>
+              </div>
+              <div class="cart col-lg-1 col-md-1 d-flex">
+                <a href="giohang.html" aria-label="Giỏ hàng">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="header-mobile">
+      <div class="header-main mobile " id="headerMain ">
+        <div class="inner-wrap d-flex col-12">
+          <!-- Dropdown Button -->
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="index.html">Trang chủ</a>
+              <a class="dropdown-item" href="shop.html">Cửa hàng</a>
+              <a class="dropdown-item" href="trendingprd.html">Bán chạy</a>
+              <a class="dropdown-item" href="tintuc.html">Tin tức</a>
+              <a class="dropdown-item" href="gioithieu.html">Giới thiệu</a>
+
+              <!-- Modal for Team Members -->
+              <button class="dropdown-item" type="button" data-toggle="modal" data-target="#ttnhom">TT nhóm</button>
+
+              <!-- Modal Login and Register -->
+              <button class="dropdown-item" type="button" data-toggle="modal" data-target="#login">Đăng nhập</button>
+              <button class="dropdown-item" type="button" data-toggle="modal" data-target="#sign">Đăng ký</button>
+
+              <!-- Social Media Links -->
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item fb"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+              <a href="#" class="dropdown-item ins"><i class="fa-brands fa-instagram"></i> Instagram</a>
+              <a href="#" class="dropdown-item tt"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+              <a href="#" class="dropdown-item mail"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+          </div>
+
+          <!-- Logo and Title -->
+          <div class="logo">
+            <img src="./assets/img/logo web/logo2.png" alt="Logo" class="img-fluid" />
+          </div>
+
+          <!-- Cart Icon -->
+          <div class="cart">
+            <a href="giohang.html" aria-label="Giỏ hàng">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Modals -->
+      <!-- Modal for Team Members -->
+      <div class="modal fade modal-form modal-ff" id="ttnhom" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header modal-title">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h5 class="modal-title" id="exampleModalLabel">Các thành viên trong nhóm</h5>
+            </div>
+            <div class="modal-body-ttnhom">
+              <span class="d-block">Nguyễn Hùng Vương</span>
+              <span class="d-block">Nguyễn Duy Hoài Trung</span>
+              <span class="d-block">Nguyễn Hoàng Nhật Anh</span>
+              <span class="d-block">Nguyễn Thanh Phong</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Login -->
+      <div class="modal fade modal-form modal-ff" id="login" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <img class="inner-img" src="./assets/img/logo web/logo2.png" alt="Logo" />
+            </div>
+            <div class="modal-body">
+              <form id="loginForm">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nhập tên đăng nhập" id="loginUsername"
+                    autocomplete="on" autofocus />
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="loginPassword" />
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn button">Đăng nhập</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Register -->
+      <div class="modal fade modal-form modal-ff" id="sign" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <img class="inner-img" src="./assets/img/logo web/logo2.png" alt="Logo" />
+            </div>
+            <div class="modal-body">
+              <form onsubmit="validateRegisterForm(event)">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Nhập email" id="registerEmail"
+                    autocomplete="on" />
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Tên đăng nhập" id="registerUsername"
+                    autocomplete="on" />
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="registerPassword1" />
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Nhập lại mật khẩu" id="registerPassword2" />
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" class="form-check-input" id="termsCheckbox" />
+                  Tôi đồng ý với các điều khoản
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn button">Đăng ký</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header Main for Mobile -->
+    </section>
   </header>
   <!-- End header -->
   <!-- body  -->
@@ -246,12 +382,12 @@
       <img class="decco30" src="./assets/img/trang-tri-nen/nho.png" alt="">
     </div>
     <!-- Form tìm kiếm chi tiết -->
-    <section class="search-bar container my-4 ">
+    <section class="search-bar container my-3 ">
       <form id="detailedSearchForm" class="row col-12">
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-6 mb-1">
           <input type="text" id="searchName" class="form-control" placeholder="Tìm theo tên sản phẩm">
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6 mb-1">
           <select id="categoryFilter" class="form-control">
             <option value="">Tất cả danh mục</option>
             <option value="Hoa quả">Hoa quả</option>
@@ -260,7 +396,7 @@
             <option value="Hữu cơ">Hữu cơ</option>
           </select>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6 mb-1">
           <select id="priceRange" class="form-control">
             <option value="">Chọn khoảng giá</option>
             <option value="0-50000">0 - 50k</option>
@@ -272,7 +408,7 @@
             <option value="1000000-99999999999">Trên 1 triệu</option>
           </select>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-2 col-6 mb-1">
           <button type="submit" class="btn btn-success w-100">Tìm kiếm</button>
         </div>
       </form>
@@ -280,7 +416,7 @@
     <!-- Danh sách sản phẩm -->
     <section class="product-list list-ogranic container my-4">
       <div id="productContainer" class="row list">
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="chanh dây" data-category="Hoa quả" data-price="60000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="chanh dây" data-category="Hoa quả" data-price="60000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/chanh-day.png" alt="" />
           </div>
@@ -291,7 +427,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="Bơ" data-category="Hoa quả" data-price="40000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="Bơ" data-category="Hoa quả" data-price="40000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/bo-hass.png" alt="Error" />
           </div>
@@ -302,7 +438,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="Cam" data-category="Hoa quả" data-price="30000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="Cam" data-category="Hoa quả" data-price="30000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/CamCam.png" alt="Error" />
           </div>
@@ -313,7 +449,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="chanh xanh" data-category="Hoa quả" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="chanh xanh" data-category="Hoa quả" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/chanh-xanh.png" alt="Error" />
           </div>
@@ -324,7 +460,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="chanh vàng" data-category="Hoa quả" data-price="15000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="chanh vàng" data-category="Hoa quả" data-price="15000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/Chanh.png" alt="Error" />
           </div>
@@ -335,7 +471,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="cherry" data-category="Hoa quả" data-price="149000000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="cherry" data-category="Hoa quả" data-price="149000000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/Cherry.png" alt="Error" />
           </div>
@@ -346,7 +482,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="đào" data-category="Hoa quả" data-price="50000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="đào" data-category="Hoa quả" data-price="50000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/dao.png" alt="Error" />
           </div>
@@ -357,7 +493,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="Dâu tầm" data-category="Hoa quả" data-price="60000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="Dâu tầm" data-category="Hoa quả" data-price="60000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/dau-tam.png" alt="Error" />
           </div>
@@ -368,7 +504,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="Dâu tây" data-category="Hoa quả" data-price="55000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="Dâu tây" data-category="Hoa quả" data-price="55000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/dau-tay.png" alt="Error" />
           </div>
@@ -379,7 +515,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="salad ức gà" data-category="Hữu cơ" data-price="120000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="salad ức gà" data-category="Hữu cơ" data-price="120000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/ucga.png" alt="Error" />
           </div>
@@ -390,7 +526,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="salad trứng gà" data-category="Hữu cơ" data-price="100000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="salad trứng gà" data-category="Hữu cơ" data-price="100000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/trung.png" alt="Error" />
           </div>
@@ -401,7 +537,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="salad tôm tom sà lát" data-category="Hữu cơ" data-price="110000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="salad tôm tom sà lát" data-category="Hữu cơ" data-price="110000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/tom.png" alt="Error" />
           </div>
@@ -412,7 +548,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="bắp cải" data-category="Rau củ" data-price="15000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="bắp cải" data-category="Rau củ" data-price="15000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/bap-cai.png" alt="Error" />
           </div>
@@ -423,7 +559,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="Bắp" data-category="Rau củ" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="Bắp" data-category="Rau củ" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/BapOrNGo.png" alt="Error" />
           </div>
@@ -434,7 +570,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="bầu" data-category="Rau củ" data-price="18000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="bầu" data-category="Rau củ" data-price="18000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/baubi.png" alt="Error" />
           </div>
@@ -445,7 +581,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="bí đỏ" data-category="Rau củ" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="bí đỏ" data-category="Rau củ" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/bi-do.png" alt="Error" />
           </div>
@@ -456,7 +592,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="cà chua" data-category="Rau củ" data-price="19000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="cà chua" data-category="Rau củ" data-price="19000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/ca-chua.png" alt="Error" />
           </div>
@@ -467,7 +603,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="cải thìa" data-category="Rau củ" data-price="12000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="cải thìa" data-category="Rau củ" data-price="12000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/cai-thia.png" alt="Error" />
           </div>
@@ -478,7 +614,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="hạt bí đỏ" data-category="Hạt sấy" data-price="120000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="hạt bí đỏ" data-category="Hạt sấy" data-price="120000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/bido.png" alt="Error" />
           </div>
@@ -489,7 +625,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="hạt chia" data-category="Hạt sấy" data-price="110000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="hạt chia" data-category="Hạt sấy" data-price="110000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/chia.png" alt="Error" />
           </div>
@@ -500,7 +636,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="đậu đen" data-category="Hạt sấy" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="đậu đen" data-category="Hạt sấy" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/dauden.png" alt="Error" />
           </div>
@@ -511,7 +647,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="đậu nành" data-category="Hạt sấy" data-price="45000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="đậu nành" data-category="Hạt sấy" data-price="45000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/daunanh.png" alt="Error" />
           </div>
@@ -522,7 +658,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="đậu phộng" data-category="Hạt sấy" data-price="25000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="đậu phộng" data-category="Hạt sấy" data-price="25000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/dauphong.png" alt="Error" />
           </div>
@@ -533,7 +669,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="đạu xanh" data-category="Hạt sấy" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="đạu xanh" data-category="Hạt sấy" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/dauxanh.png" alt="Error" />
           </div>
@@ -544,7 +680,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="Hạt hat óc chó" data-category="Hạt sấy" data-price="160000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="Hạt hat óc chó" data-category="Hạt sấy" data-price="160000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/occho.png" alt="Error" />
           </div>
@@ -555,7 +691,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="nho sấy vàng khô" data-category="Hạt sấy" data-price="50000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="nho sấy vàng khô" data-category="Hạt sấy" data-price="50000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/nhovang.png" alt="Error" />
           </div>
@@ -566,7 +702,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="mè đen" data-category="Hạt sấy" data-price="70000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="mè đen" data-category="Hạt sấy" data-price="70000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/meden.png" alt="Error" />
           </div>
@@ -577,7 +713,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="việt quốc" data-category="Hoa quả" data-price="11000000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="việt quốc" data-category="Hoa quả" data-price="11000000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/vietQuat.png" alt="Error" />
           </div>
@@ -588,7 +724,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="thanh long" data-category="Hoa quả" data-price="35000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="thanh long" data-category="Hoa quả" data-price="35000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/thanh-long.png" alt="Error" />
           </div>
@@ -599,7 +735,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="xoài" data-category="Hoa quả" data-price="25000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="xoài" data-category="Hoa quả" data-price="25000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/Mango.png" alt="Error" />
           </div>
@@ -610,7 +746,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="lựu" data-category="Hoa quả" data-price="45000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="lựu" data-category="Hoa quả" data-price="45000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/Luu.png" alt="Error" />
           </div>
@@ -621,7 +757,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="dưa lưới" data-category="Hoa quả" data-price="50000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="dưa lưới" data-category="Hoa quả" data-price="50000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/DuaLuoi.png" alt="Error" />
           </div>
@@ -632,7 +768,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="dưa hấu" data-category="Hoa quả" data-price="15000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="dưa hấu" data-category="Hoa quả" data-price="15000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/dua-hau.png" alt="Error" />
           </div>
@@ -643,7 +779,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="chuối" data-category="Hoa quả" data-price="15000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="chuối" data-category="Hoa quả" data-price="15000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/minion.png" alt="Error" />
           </div>
@@ -654,7 +790,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="khớm thơm" data-category="Hoa quả" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="khớm thơm" data-category="Hoa quả" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/pineapple.png" alt="Error" />
           </div>
@@ -665,7 +801,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="quýt thái" data-category="Hoa quả" data-price="60000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="quýt thái" data-category="Hoa quả" data-price="60000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hoa-qua/quyt-thai.png" alt="Error" />
           </div>
@@ -676,7 +812,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="khoai tây" data-category="Rau củ" data-price="33000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="khoai tây" data-category="Rau củ" data-price="33000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/khoai-tay.png" alt="Error" />
           </div>
@@ -687,7 +823,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="mướp" data-category="Rau củ" data-price="12000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="mướp" data-category="Rau củ" data-price="12000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/muop.png" alt="Error" />
           </div>
@@ -698,7 +834,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="ớt chuông" data-category="Rau củ" data-price="120000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="ớt chuông" data-category="Rau củ" data-price="120000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/otchuong.png" alt="Error" />
           </div>
@@ -709,7 +845,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="đu đủ" data-category="Rau củ" data-price="25000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="đu đủ" data-category="Rau củ" data-price="25000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/dudu.png" alt="Error" />
           </div>
@@ -720,7 +856,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="dưa leo" data-category="Rau củ" data-price="35000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="dưa leo" data-category="Rau củ" data-price="35000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/dualeo.png" alt="Error" />
           </div>
@@ -731,7 +867,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="ớt đỏ" data-category="Rau củ" data-price="40000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="ớt đỏ" data-category="Rau củ" data-price="40000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/ot-do.png" alt="Error" />
           </div>
@@ -742,7 +878,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="diếp cá" data-category="Rau củ" data-price="15000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="diếp cá" data-category="Rau củ" data-price="15000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/diepca.png" alt="Error" />
           </div>
@@ -753,7 +889,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="cà rốt" data-category="Rau củ" data-price="15000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="cà rốt" data-category="Rau củ" data-price="15000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/rau-cu/carot.png" alt="Error" />
           </div>
@@ -764,7 +900,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="nước ép cà chua" data-category="Hữu cơ" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="nước ép cà chua" data-category="Hữu cơ" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/epcachua.png" alt="Error" />
           </div>
@@ -775,7 +911,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="nước ép cam" data-category="Hữu cơ" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="nước ép cam" data-category="Hữu cơ" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/epcam.png" alt="Error" />
           </div>
@@ -786,7 +922,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="nước ép dưa hấu" data-category="Hữu cơ" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="nước ép dưa hấu" data-category="Hữu cơ" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/epduahau.png" alt="Error" />
           </div>
@@ -797,7 +933,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="nước ép táo" data-category="Hữu cơ" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="nước ép táo" data-category="Hữu cơ" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/eptao.png" alt="Error" />
           </div>
@@ -808,7 +944,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="nước ép thơm khớm" data-category="Hữu cơ" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="nước ép thơm khớm" data-category="Hữu cơ" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/epthom.png" alt="Error" />
           </div>
@@ -819,7 +955,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="salad trái cây trai cay" data-category="Hữu cơ" data-price="60000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="salad trái cây trai cay" data-category="Hữu cơ" data-price="60000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/traicay.png" alt="Error" />
           </div>
@@ -830,7 +966,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="yến mạch" data-category="Hạt sấy" data-price="150000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="yến mạch" data-category="Hạt sấy" data-price="150000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/yenmach.png" alt="Error" />
           </div>
@@ -841,7 +977,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="táo tao do đỏ tan cuong" data-category="Hạt sấy" data-price="280000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="táo tao do đỏ tan cuong" data-category="Hạt sấy" data-price="280000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/taodo.png" alt="Error" />
           </div>
@@ -852,7 +988,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="kỷ ky  tử" data-category="Hạt sấy" data-price="70000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="kỷ ky  tử" data-category="Hạt sấy" data-price="70000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/kytu.png" alt="Error" />
           </div>
@@ -863,7 +999,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="hạt sen" data-category="Hạt sấy" data-price="100000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="hạt sen" data-category="Hạt sấy" data-price="100000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/sen.png" alt="Error" />
           </div>
@@ -874,7 +1010,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="hạt kê" data-category="Hạt sấy" data-price="35000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="hạt kê" data-category="Hạt sấy" data-price="35000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/ke.png" alt="Error" />
           </div>
@@ -885,7 +1021,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="kiwi" data-category="Hạt sấy" data-price="180000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="kiwi" data-category="Hạt sấy" data-price="180000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/hat-say/kiwi.png" alt="Error" />
           </div>
@@ -896,7 +1032,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="Salad greek" data-category="Hữu cơ" data-price="70000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="Salad greek" data-category="Hữu cơ" data-price="70000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/greek.png" alt="Error" />
           </div>
@@ -907,7 +1043,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="nước ép rau má" data-category="Hữu cơ" data-price="15000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="nước ép rau má" data-category="Hữu cơ" data-price="15000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/ep-rauma.png" alt="Error" />
           </div>
@@ -918,7 +1054,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="nước ép bưởi" data-category="Hữu cơ" data-price="20000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="nước ép bưởi" data-category="Hữu cơ" data-price="20000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/epbuoi.png" alt="Error" />
           </div>
@@ -929,7 +1065,7 @@
             <a class="button" href="motasp.html">Chi tiết</a>
           </div>
         </div>
-        <div class="box col-lg-3 col-sm-6 product-item" data-name="Salad thái thai" data-category="Hữu cơ" data-price="40000">
+        <div class="box col-lg-3 col-sm-4 col-6 product-item" data-name="Salad thái thai" data-category="Hữu cơ" data-price="40000">
           <div class="inner-img">
             <img src="./assets/img/san-pham/huu-co/thai.png" alt="Error" />
           </div>
@@ -953,32 +1089,32 @@
   <!-- footer  -->
   <footer class="footer">
     <div class="container d-flex justify-content-between">
-        <div class="contact-info">
-            <div class="title">Liên hệ</div>
-            <b class="info">Công ty TNHH Thực phẩm và Dịch Vụ Fiberico</b>
-            <p class="info">
-                Địa chỉ: An Dương Vương - Phường 3 - Quận 5 - TP.Hồ Chí Minh
-            </p>
-            <p class="info">Hotline: <a href="#123">0939793999</a></p>
-            <p class="info">Email: <a href="mailto:contact@fiberico.vn">contact@fiberico.vn</a></p>
-        </div>
-        <div class="menu-function">
-            <div class="title">Fiberico.vn</div>
-            <li><a href="gioithieu.html#ve-chung-toi">Về chúng tôi</a></li>
-            <li><a href="gioithieu.html#cau-chuyen">Câu chuyện về Fiberico</a></li>
-            <li><a href="gioithieu.html#huong-dan">Hướng dẫn bảo quản</a></li>
-            <li><a href="gioithieu.html#blog">Blog Fiberico</a></li>
-            <li><a href="gioithieu.html#lien-he">Liên hệ</a></li>
-        </div>
-        <div class="help">
-            <div class="title">Trợ giúp</div>
-            <li><a href="gioithieu.html#hd-tt">Hướng dẫn thanh toán</a></li>
-            <li><a href="gioithieu.html#chinh-sach">Chính sách bảo mật</a></li>
-            <li><a href="gioithieu.html#cham-soc">Chăm sóc khách hàng</a></li>
-            <li><a href="gioithieu.html#dieu-khoan">Điều khoản sử dụng</a></li>
-        </div>
+      <div class="contact-info col-8">
+        <div class="title">Liên hệ</div>
+        <b class="info">Công ty TNHH Thực phẩm và Dịch Vụ Fiberico</b>
+        <p class="info">
+          Địa chỉ: An Dương Vương - Phường 3 - Quận 5 - TP.Hồ Chí Minh
+        </p>
+        <p class="info">Hotline: <a href="#123">0939793999</a></p>
+        <p class="info">Email: <a href="mailto:contact@fiberico.vn">contact@fiberico.vn</a></p>
+      </div>
+      <div class="menu-function col-2">
+        <div class="title">Fiberico.vn</div>
+        <li><a class="info" href="gioithieu.html#ve-chung-toi">Về chúng tôi</a></li>
+        <li><a class="info" href="gioithieu.html#cau-chuyen">Câu chuyện về Fiberico</a></li>
+        <li><a class="info" href="gioithieu.html#huong-dan">Hướng dẫn bảo quản</a></li>
+        <li><a class="info" href="gioithieu.html#blog">Blog Fiberico</a></li>
+        <li><a class="info" href="gioithieu.html#lien-he">Liên hệ</a></li>
+      </div>
+      <div class="help col-2">
+        <div class="title">Trợ giúp</div>
+        <li><a class="info" href="gioithieu.html#hd-tt">Hướng dẫn thanh toán</a></li>
+        <li><a class="info" href="gioithieu.html#chinh-sach">Chính sách bảo mật</a></li>
+        <li><a class="info" href="gioithieu.html#cham-soc">Chăm sóc khách hàng</a></li>
+        <li><a class="info" href="gioithieu.html#dieu-khoan">Điều khoản sử dụng</a></li>
+      </div>
     </div>
-</footer>
+  </footer>
   <!-- End footer  -->
   <script src="./assets/bootstrap/jquery.slim.min.js"></script>
   <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
