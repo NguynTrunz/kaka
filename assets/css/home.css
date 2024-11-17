@@ -184,14 +184,14 @@
   box-shadow: 0 2px 4px var(--color-one);
   padding: 8px 12px;
 }
-.logo{
+.logo {
   height: 70px;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   padding: 0;
 }
-.logo img{
+.logo img {
   padding: 0;
   height: 60px;
   width: auto;
@@ -204,27 +204,25 @@
   padding: 0;
 }
 /* mobile  */
-.mobile .inner-wrap{
-  width: 100%;
+.mobile .inner-wrap {
   flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
-.mobile .logo{
-  height: 70px;
+.mobile .logo {
+  height: auto;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   padding: 0;
 }
 .mobile .logo .img-fluid {
-  height: 50px;
+  height: 70px;
   width: 100%;
   object-fit: contain;
   padding: 0;
 }
-.mobile .inner-wrap{
-  align-items: center;
-}
-.mobile .dropdown-toggle{
+.mobile .dropdown-toggle {
   background-color: var(--color-one);
   border: none;
 }
@@ -335,7 +333,7 @@
 .section-1 .na {
   margin-top: 80px;
 }
-.button-2{
+.button-2 {
   border: 2px solid var(--color-four);
   padding: 16px 32px;
   font-size: 22px;
@@ -345,7 +343,7 @@
   border-radius: 12px;
   transition: background-color 0.5s ease-out;
 }
-.button-2:hover{
+.button-2:hover {
   text-decoration: none;
   color: white;
   background-color: var(--color-three);
@@ -724,7 +722,7 @@
 .list-ogranic .list .box .info-prd .button {
   padding: 6px 8px;
   border-radius: 7px;
-  margin-right: 5PX;
+  margin-right: 5px;
   transition: background-color 0.4s ease-out;
 }
 .list-ogranic .list .box .info-prd .button:hover {
@@ -741,29 +739,28 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 .section-6 .content {
   max-width: 570px;
   margin: auto;
   position: relative;
 }
-.section-6 .content .shape-title{
+.section-6 .content .shape-title {
   width: 100%;
   top: 0;
 }
- .content .desc {
+.content .desc {
   width: 100%;
 }
- .box-blog {
+.box-blog {
   flex-wrap: wrap;
 }
- .box-blog .box {
+.box-blog .box {
   padding: 0 15px;
   font-family: var(--font2);
   margin-bottom: 40px;
 }
- .box-blog .box .blog-img {
+.box-blog .box .blog-img {
   width: 100%;
   height: auto;
 }
@@ -774,7 +771,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
- .box-blog .box .date-blog {
+.box-blog .box .date-blog {
   height: 10%;
   width: 100%;
   background-color: #f8fae5;
@@ -783,22 +780,22 @@
   font-size: 14px;
   justify-content: space-between;
 }
- .box-blog .box .date-blog i {
+.box-blog .box .date-blog i {
   color: var(--color-four);
 }
- .box-blog .box .content {
+.box-blog .box .content {
   height: auto;
   width: 100%;
   background-color: #f8fae5;
   color: #010148;
   padding: 10px 5px;
 }
- .box-blog .box .content .title {
+.box-blog .box .content .title {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 10px;
 }
- .box-blog .box .content .button-2 {
+.box-blog .box .content .button-2 {
   padding: 3px 10px;
   font-size: 16px;
   font-weight: 500;
@@ -806,7 +803,7 @@
   color: var(--color-two);
   border-radius: 6px;
 }
- .box-blog .box .content .button-2:hover {
+.box-blog .box .content .button-2:hover {
   color: var(--color-five);
 }
 /* End section6 */
@@ -874,24 +871,33 @@ li a:hover {
     padding: 0 5px;
     text-align: center;
   }
-  .banner2{
+  .banner2 {
     display: none;
   }
 }
 /*Ipad dọc(768 x 1024)*/
 @media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding: auto; /* Remove extra padding */
+    width: 100vw; /* Ensure it fits the viewport width */
+    overflow: hidden; /* Prevent overflow */
+  }
   .header-top {
     display: none;
   }
-  .mobile{
-    display: block;
-    width: 100%;
-  }
-  .pc{
+  .pc {
     display: none;
   }
-  .banner{
+  .banner {
     width: 100%;
+  }
+  .mobile {
+    display: block;
+    
   }
 }
 
@@ -900,19 +906,7 @@ li a:hover {
   .section-2 .box-content .box {
     flex: 0 0 100%; /* 1 box trên 1 hàng cho màn hình dưới 480px */
   }
-  .header-top {
-    display: none;
-  }
-  .mobile{
-    display: block;
-  }
-  .mobile h3{
-    display: none;
-  }
-  .pc{
-    display: none;
-  }
-  
+
 }
 
 /* End body  */
@@ -933,4 +927,3 @@ body {
 .sidebar.active {
   left: 0; /* Đẩy sidebar vào trong khi active */
 }
-
