@@ -884,7 +884,6 @@ li a:hover {
     flex-direction: column;
     padding: auto; /* Remove extra padding */
     width: 100vw; /* Ensure it fits the viewport width */
-    overflow: hidden; /* Prevent overflow */
   }
   .header-top {
     display: none;
