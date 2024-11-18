@@ -942,6 +942,36 @@ li a:hover {
   .section-1 .banner1 {
     height: 550px;
   }
+  .logo {
+    height: 35px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .logo img {
+    padding: 0;
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+  }
+  .logo .img-fluid {
+    height: 35px;
+    width: 100%;
+    object-fit: contain;
+    padding: 0;
+  }
+  .dropdown-toggle{
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .cart i{
+    height: 15px;
+  }
 }
 
 /* End body  */
