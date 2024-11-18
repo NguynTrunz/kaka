@@ -850,6 +850,13 @@ li a:hover {
     padding: auto; /* Remove extra padding */
     width: 100vw; /* Ensure it fits the viewport width */
   }
+  .header-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Đảm bảo header chiếm toàn bộ chiều rộng */
+    z-index: 1000; /* Đặt z-index cao hơn để đảm bảo nó nằm trên các phần tử khác */
+  }
   .header-top {
     display: none;
   }
@@ -1004,7 +1011,6 @@ li a:hover {
   }
   .footer {
     padding: 20px 0;
-    padding-bottom: 0;
   }
   .footer .d-flex {
     flex-wrap: wrap;
