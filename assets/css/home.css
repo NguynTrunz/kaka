@@ -847,15 +847,13 @@ li a:hover {
     justify-items: center;
     align-items: center;
     flex-direction: column;
-    padding: auto; /* Remove extra padding */
-    width: 100vw; /* Ensure it fits the viewport width */
+    width: 100vw;
+    position: fixed;
   }
   .header-mobile {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%; /* Đảm bảo header chiếm toàn bộ chiều rộng */
-    z-index: 1000; /* Đặt z-index cao hơn để đảm bảo nó nằm trên các phần tử khác */
+    z-index: 1000;
   }
   .header-top {
     display: none;
@@ -1020,6 +1018,30 @@ li a:hover {
   }
   .footer .info {
     font-size: 12px;
+  }
+  .section-6{
+    position: relative;
+  }
+  /* Đảm bảo footer không có khoảng trắng dưới cùng */
+  footer {
+    margin: 0;
+    padding: 20px 0; /* Thêm padding nếu cần */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both; /* Đảm bảo không có phần tử nào nổi lên */
+  }
+
+  /* Giải quyết vấn đề với phần tử body có chiều cao không đầy đủ */
+  .main-content {
+    min-height: 100%; /* Đảm bảo phần nội dung chiếm đủ chiều cao */
+    padding-bottom: 60px; /* Giảm khoảng cách để footer không bị kéo lên */
+  }
+
+  footer {
+    position: relative;
+    width: 100%;
+    clear: both;
   }
 }
 
