@@ -97,3 +97,11 @@
   top: 2%;
   left: 32%;
 }
+@media screen and (max-width: 480px){
+  .ban-chay .title-hoa-qua{
+    font-size: 34px;
+  }
+  .ban-chay .hoa-qua .descr, .ban-chay .rau-cu .descr, .ban-chay .hat-say .descr, .ban-chay .huu-co .descr {
+    font-size: 14px;
+  }
+}

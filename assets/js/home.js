@@ -1,25 +1,4 @@
-// chuyển trang section 5
-document.querySelectorAll(".button-navi").forEach((button) => {
-  button.addEventListener("click", () => {
-    // Ẩn tất cả các danh sách
-    document.querySelectorAll("[data-list]").forEach((list) => {
-      list.classList.add("d-none"); // Ẩn phần tử
-      list.classList.remove("fade-in"); // Loại bỏ hiệu ứng mờ dần
-    });
-
-    // Hiển thị danh sách mục tiêu
-    const targetList = document.getElementById(
-      button.getAttribute("data-target")
-    );
-    targetList.classList.remove("d-none"); // Hiển thị phần tử
-
-    // Thêm lớp fade-in với một chút delay để tạo hiệu ứng mờ dần
-    setTimeout(() => {
-      targetList.classList.add("fade-in");
-    }, 50); // Delay nhỏ để hiệu ứng mờ dần diễn ra
-  });
-});
-// hiển thị nút khi đang ở trang section 5
+// Chuyển trang section 5
 document.querySelectorAll(".button-navi").forEach((button) => {
   button.addEventListener("click", () => {
     // Xóa lớp active khỏi tất cả các nút
@@ -52,3 +31,9 @@ document.querySelectorAll(".button-navi").forEach((button) => {
     }
   });
 });
+
+// Đảm bảo nút đầu tiên luôn trong trạng thái active
+const firstButton = document.querySelector('.button-navi');
+if (firstButton) {
+  firstButton.classList.add('active'); // Thêm lớp active cho nút đầu tiên
+}
