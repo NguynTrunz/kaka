@@ -889,7 +889,7 @@ li a:hover {
     height: 550px;
   }
   .section-1 .banner1 img {
-    height: 550px;
+    height: 600px;
   }
   .section-1 .main-title h1 {
     font-size: 36px;
@@ -912,7 +912,7 @@ li a:hover {
     margin-right: 20px;
   }
   .section-2, .section-2 .container{
-    padding: 0;
+    padding: 20px 0;
   }
   .section-2 .box-content .box {
     flex: 0 0 48%; /* 1 box trên 1 hàng cho màn hình dưới 480px */
