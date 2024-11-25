@@ -1,6 +1,6 @@
 /* header */
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%; /* Đảm bảo header chiếm toàn bộ chiều rộng */
@@ -251,6 +251,9 @@
 
 /* body */
 /* section1 */
+.section-1{
+  margin-bottom: 50px;
+}
 .section-1 .banner {
   position: relative;
   width: 100%;
@@ -260,7 +263,7 @@
   position: absolute;
   width: 100%;
   height: auto;
-  top: -150px;
+  top: -90px;
   overflow: hidden;
 }
 .section-1 .banner1 img {
@@ -842,18 +845,12 @@ li a:hover {
 }
 /*Ipad dọc(768 x 1024)*/
 @media screen and (max-width: 768px) {
-  .header {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    position: fixed;
-  }
   .header-mobile {
-    position: fixed;
     top: 0;
     z-index: 1000;
+    display: block;
+    position: fixed;
+    width: 80%;
   }
   .header-top {
     display: none;
@@ -902,9 +899,6 @@ li a:hover {
   }
   .banner {
     width: 100%;
-  }
-  .header-mobile {
-    display: block;
   }
   .section-1 .banner {
     height: 400px;
