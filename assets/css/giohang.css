@@ -145,6 +145,15 @@ input[type="number"] {
   color: var(--color-three); /* Màu đỏ cho thông báo lỗi */
 }
 
+.remove-checkbox {
+  display: none;
+}
+
+/* Ẩn hàng sản phẩm khi checkbox được chọn */
+.remove-checkbox:checked + .remove-btn + tr.d {
+  display: none;
+}
+
 @media screen and (max-width: 960px) {
     .d {
         display: flex;
